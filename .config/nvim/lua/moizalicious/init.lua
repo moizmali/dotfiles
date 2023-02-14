@@ -1,5 +1,4 @@
-require("moizalicious.colourscheme")
 require("moizalicious.keymaps")
 require("moizalicious.options")
+require("moizalicious.packer")
 
-require("moizalicious.plugin")

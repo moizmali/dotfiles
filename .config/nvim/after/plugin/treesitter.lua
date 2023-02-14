@@ -1,5 +1,3 @@
-print('treesitter after file loaded')
-
 -- Check whether treesitter is installed
 local status, treesitter = pcall(require, "nvim-treesitter.configs")
 if (not status) then

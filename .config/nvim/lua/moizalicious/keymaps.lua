@@ -32,5 +32,6 @@ else
     keymap.set('n', '<leader>gf', telescope.git_files, {})
     keymap.set('n', '<leader>fb', telescope.buffers, {})
     keymap.set('n', '<leader>fh', telescope.help_tags, {})
+    keymap.set('n', '<leader>fk', telescope.keymaps, {})
 end
 
