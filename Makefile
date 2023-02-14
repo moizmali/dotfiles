@@ -9,3 +9,6 @@ install-tpm:
 update-config:
 	cp .tmux.conf $(HOME)/
 
+.PHONY: update-nvim
+update-nvim:
+	cp -r $(HOME)/.config/nvim/* .config/nvim/
