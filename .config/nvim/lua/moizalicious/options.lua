@@ -16,6 +16,8 @@ opt.wrap = false
 opt.ignorecase = true
 opt.smartcase = true
 
--- clipboard
+-- Universal clipboard
 opt.clipboard:append("unnamedplus")
 
+-- Add ruler
+opt.colorcolumn = "120"

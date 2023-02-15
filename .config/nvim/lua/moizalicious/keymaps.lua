@@ -24,14 +24,14 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- Telescope Keymaps
 local status, telescope = pcall(require, 'telescope.builtin')
-if (not status) then
+if not status then
     print("Telescope is not installed!")
 else
-    keymap.set('n', '<leader>fg', telescope.live_grep, {})
     keymap.set('n', '<leader>ff', telescope.find_files, {})
     keymap.set('n', '<leader>gf', telescope.git_files, {})
+    keymap.set('n', '<leader>fg', telescope.live_grep, {})
     keymap.set('n', '<leader>fb', telescope.buffers, {})
-    keymap.set('n', '<leader>fh', telescope.help_tags, {})
     keymap.set('n', '<leader>fk', telescope.keymaps, {})
+    keymap.set('n', '<leader>fh', telescope.help_tags, {})
 end
 
