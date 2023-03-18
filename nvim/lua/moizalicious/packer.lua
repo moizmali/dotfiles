@@ -53,19 +53,6 @@ function(use)
         }
     }
 
-    -- TODO Plugin
-    use {
-        "folke/todo-comments.nvim",
-        requires = "nvim-lua/plenary.nvim",
-        config = function()
-            require("todo-comments").setup {
-                -- your configuration comes here
-                -- or leave it empty to use the default settings
-                -- refer to the configuration section below
-            }
-        end
-    }
-
     -- Nvim Tree
     use {
         'nvim-tree/nvim-tree.lua',
@@ -75,16 +62,15 @@ function(use)
     }
 
     use {
-        "akinsho/toggleterm.nvim", tag = '*',
-        config = function()
-            require("toggleterm").setup()
-        end
-    }
-
-    use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
+
+    -- Git Diff View
+    use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+
+    -- Git Blame Plugin
+    use 'f-person/git-blame.nvim'
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

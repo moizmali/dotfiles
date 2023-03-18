@@ -43,18 +43,16 @@ else
     keymap.set('n', '<leader>fh', telescope.help_tags, {})
 end
 
--- TODO comments with Telescope
-status, _ = pcall(require, 'todo-comments')
+status, _ = pcall(require, 'diffview')
 if not status then
-    print("todo-comments plugin is not installed!")
+    print('diffview plugin not installed!')
 else
-    keymap.set("n", "<leader>ft", ":TodoTelescope<CR>", {})
+    keymap.set('n', '<leader>dv', ":DiffviewOpen<CR>")
 end
 
-status, _ = pcall(require, 'toggleterm')
+status, _ = pcall(require, 'gitblame')
 if not status then
-    print("toggleterm plugin is not installed!")
+    print('git-blame plugin not installed!')
 else
-    keymap.set("n", "<leader>`", ":ToggleTerm<CR>", {})
+    keymap.set('n', '<leader>gb', ":GitBlameToggle<CR>")
 end
-
