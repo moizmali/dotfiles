@@ -8,7 +8,7 @@ end
 -- Setup treesitter
 treesitter.setup {
   -- A list of parser names, or "all" (the four listed parsers should always be installed)
-  ensure_installed = { "c", "lua", "vim", "help", "javascript", "typescript", "go", "yaml", "json", "bash" },
+  ensure_installed = { "c", "lua", "vim", "help", "javascript", "typescript", "go", "yaml", "json", "bash", "dart" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = true,

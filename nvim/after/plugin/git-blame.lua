@@ -1,5 +1,5 @@
-local status, git_blame = pcall(require, 'gitblame')
-if not status then
+local ok, _ = pcall(require, 'gitblame')
+if not ok then
     print('git-blame plugin not installed!')
     return
 end

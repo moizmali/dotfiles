@@ -10,6 +10,7 @@ keymap.set("n", "<leader>q", vim.cmd.q, {})
 -- Highlight and select all
 keymap.set("n", "<C-a>", "ggVG")
 
+keymap.set("n", "gg", "ggzz")
 keymap.set("n", "j", "jzz")
 keymap.set("n", "k", "kzz")
 keymap.set("n", "<C-f>", "<C-f>zz")
@@ -47,7 +48,8 @@ status, _ = pcall(require, 'diffview')
 if not status then
     print('diffview plugin not installed!')
 else
-    keymap.set('n', '<leader>dv', ":DiffviewOpen<CR>")
+    keymap.set('n', '<leader>do', ":DiffviewOpen<CR>")
+    keymap.set('n', '<leader>dc', ":DiffviewClose<CR>")
 end
 
 status, _ = pcall(require, 'gitblame')
