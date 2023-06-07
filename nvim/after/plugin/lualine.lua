@@ -1,5 +1,5 @@
-local ok, lualine = pcall(require, 'lualine')
-if not ok then
+local status, lualine = pcall(require, 'lualine')
+if not status then
     print('lualine plugin is not installed!')
     return
 end

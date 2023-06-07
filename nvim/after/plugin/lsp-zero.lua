@@ -1,5 +1,5 @@
-local ok, lsp_zero = pcall(require, "lsp-zero")
-if not ok then
+local status, lsp_zero = pcall(require, "lsp-zero")
+if not status then
     print("LSP Plugins not installed!")
     return
 end
