@@ -3,7 +3,6 @@ vim.g.mapleader = leader
 
 local keymap = vim.keymap
 
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true })
 keymap.set("n", "<leader>w", vim.cmd.wa, {})
 keymap.set("n", "<leader>q", vim.cmd.q, {})
 
@@ -44,17 +43,25 @@ else
     keymap.set('n', '<leader>fh', telescope.help_tags, {})
 end
 
+status, _ = pcall(require, 'nvim-tree')
+if not status then
+    print('nvim-tree plugin not installed!')
+else
+    keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true })
+end
+
 status, _ = pcall(require, 'diffview')
 if not status then
     print('diffview plugin not installed!')
 else
-    keymap.set('n', '<leader>do', ":DiffviewOpen<CR>")
-    keymap.set('n', '<leader>dc', ":DiffviewClose<CR>")
+    keymap.set('n', '<leader>do', ":DiffviewOpen<CR>", { silent = true })
+    keymap.set('n', '<leader>dc', ":DiffviewClose<CR>", { silent = true })
 end
 
 status, _ = pcall(require, 'gitblame')
 if not status then
     print('git-blame plugin not installed!')
 else
-    keymap.set('n', '<leader>gb', ":GitBlameToggle<CR>")
+    keymap.set('n', '<leader>gb', ":GitBlameToggle<CR>", { silent = true })
 end
+
