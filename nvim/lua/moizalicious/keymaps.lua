@@ -30,6 +30,9 @@ keymap.set("n", "<leader><right>", "<C-w>>")
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- Format highlighted JSON using the jq command
+keymap.set("v", "<leader>jq", ":'<,'>!jq<CR>")
+
 -- Telescope Keymaps
 local status, telescope = pcall(require, 'telescope.builtin')
 if not status then

@@ -2,6 +2,7 @@ local opt = vim.opt
 
 -- Enable line numbers
 opt.number = true
+opt.relativenumber = true
 
 -- Set tabs to be 4 spaces
 opt.tabstop = 4
