@@ -4,5 +4,5 @@ if not status then
     return
 end
 
-vim.cmd("colorscheme nightfox")
+vim.cmd("colorscheme carbonfox")
 

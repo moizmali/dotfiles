@@ -39,9 +39,9 @@ if not status then
     print("Telescope is not installed!")
 else
     keymap.set('n', '<leader>ff', telescope.find_files, {})
-    keymap.set('n', '<leader>gf', telescope.git_files, {})
     keymap.set('n', '<leader>fg', telescope.live_grep, {})
     keymap.set('n', '<leader>fb', telescope.buffers, {})
+    keymap.set('n', '<leader>fd', telescope.diagnostics, {})
     keymap.set('n', '<leader>fk', telescope.keymaps, {})
     keymap.set('n', '<leader>fh', telescope.help_tags, {})
 end
@@ -68,3 +68,5 @@ else
     keymap.set('n', '<leader>gb', ":GitBlameToggle<CR>", { silent = true })
 end
 
+-- Show diagnostics
+keymap.set('n', '<leader>g', ':lua vim.diagnostics.open_float()<CR>', {})
