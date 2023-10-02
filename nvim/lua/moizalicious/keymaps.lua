@@ -7,7 +7,7 @@ keymap.set("n", "<leader>w", vim.cmd.wa, {})
 keymap.set("n", "<leader>q", vim.cmd.q, {})
 
 -- Highlight and select all
-keymap.set("n", "<C-a>", "ggVG")
+-- keymap.set("n", "<C-a>", "ggVG")
 
 keymap.set("n", "gg", "ggzz")
 keymap.set("n", "j", "jzz")
