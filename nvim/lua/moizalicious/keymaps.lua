@@ -12,8 +12,8 @@ keymap.set("n", "<leader>q", vim.cmd.q, {})
 keymap.set("n", "gg", "ggzz")
 keymap.set("n", "j", "jzz")
 keymap.set("n", "k", "kzz")
-keymap.set("n", "<C-f>", "<C-f>zz")
-keymap.set("n", "<C-b>", "<C-b>zz")
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("n", "G", "Gzz")
 
 -- Split vertically & horizontally
