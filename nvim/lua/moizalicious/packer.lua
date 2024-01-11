@@ -64,7 +64,10 @@ function(use)
     -- Lualine
     use {
         'nvim-lualine/lualine.nvim',
-        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+        requires = {
+            'kyazdani42/nvim-web-devicons',
+            opt = true
+        }
     }
 
     -- Git Diff View
@@ -78,13 +81,6 @@ function(use)
 
     -- Flutter & Dart related plugins
     use 'dart-lang/dart-vim-plugin'
-    use {
-        'akinsho/flutter-tools.nvim',
-        requires = {
-            'nvim-lua/plenary.nvim',
-            'stevearc/dressing.nvim', -- optional for vim.ui.select
-        },
-    }
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
