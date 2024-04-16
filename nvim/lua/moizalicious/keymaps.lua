@@ -7,7 +7,7 @@ local keymap = vim.keymap
 keymap.set("n", "<leader>w", ":wa<CR>")
 keymap.set("n", "<leader>q", ":q<CR>")
 
--- Center the screen after movement
+-- Center the cursor after movement
 keymap.set("n", "gg", "ggzz")
 keymap.set("n", "j", "jzz")
 keymap.set("n", "k", "kzz")
@@ -16,8 +16,8 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("n", "G", "Gzz")
 
 -- Split vertically & horizontally
-keymap.set("n", "<leader>sv", "<C-w>v<C-w>l")
-keymap.set("n", "<leader>sh", "<C-w>s<C-w>j")
+keymap.set("n", "<leader>sv", "<C-w>v<C-w>l", { desc = "Split Vertically" })
+keymap.set("n", "<leader>sh", "<C-w>s<C-w>j", { desc = "Split Horizontally" })
 keymap.set("n", "<leader>l", "<C-w>l")
 keymap.set("n", "<leader>h", "<C-w>h")
 keymap.set("n", "<leader>j", "<C-w>j")

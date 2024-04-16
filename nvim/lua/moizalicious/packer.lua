@@ -76,9 +76,6 @@ function(use)
     -- Git Blame Plugin
     use 'f-person/git-blame.nvim'
 
-    -- GitHub Copilot
-    use 'github/copilot.vim'
-
     -- Flutter & Dart related plugins
     use 'dart-lang/dart-vim-plugin'
 
