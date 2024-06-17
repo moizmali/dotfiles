@@ -19,3 +19,7 @@ stow nvim --target ~/
 ```
 
 And that's it, all your dotfiles should be configured and ready to go.
+
+# Bash Setup
+
+Install **Oh My Bash** from the site https://ohmybash.nntoan.com. The theme I mainly use is `simple`.
