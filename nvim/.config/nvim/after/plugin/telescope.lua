@@ -4,10 +4,12 @@ if not status then
     return
 end
 
+local keymap = vim.keymap
+
 -- Telescope Keymaps
-vim.keymap.set('n', '<leader>ff', telescope.find_files, { desc = "[F]ind [F]iles" })
-vim.keymap.set('n', '<leader>fg', telescope.live_grep, { desc = "Find via Grep" })
-vim.keymap.set('n', '<leader>fb', telescope.buffers, {})
-vim.keymap.set('n', '<leader>fd', telescope.diagnostics, {})
-vim.keymap.set('n', '<leader>fk', telescope.keymaps, {})
-vim.keymap.set('n', '<leader>fh', telescope.help_tags, {})
+keymap.set('n', '<leader>ff', telescope.find_files, { desc = "Find Files" })
+keymap.set('n', '<leader>fg', telescope.live_grep, { desc = "Find via Grep" })
+keymap.set('n', '<leader>fb', telescope.buffers, { desc = "Find Buffers" })
+keymap.set('n', '<leader>fd', telescope.diagnostics, { desc = "Find Diagnostics" })
+keymap.set('n', '<leader>fk', telescope.keymaps, { desc = "Find Keymaps" })
+keymap.set('n', '<leader>fh', telescope.help_tags, { desc = "Find Help Tags" })
