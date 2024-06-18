@@ -5,4 +5,3 @@ if not status then
 end
 
 vim.cmd("colorscheme carbonfox")
-

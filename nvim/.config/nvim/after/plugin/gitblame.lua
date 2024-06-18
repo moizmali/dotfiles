@@ -9,4 +9,3 @@ vim.keymap.set('n', '<leader>gb', ":GitBlameToggle<CR>", { silent = true })
 
 -- Disable on startup.
 vim.cmd("GitBlameDisable")
-

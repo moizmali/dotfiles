@@ -10,4 +10,3 @@ lualine.setup({
         component_separators = { left = '|', right = '|' },
     }
 })
-
