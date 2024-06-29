@@ -1,5 +1,15 @@
 # Dotfiles
 
+## Prerequisites
+
+- Git
+- Tmux
+- NeoVim
+- RipGrep
+- Stow
+
+## Setup
+
 1. Clone the GitHub repository:
 
 ```
@@ -20,6 +30,6 @@ stow nvim --target ~/
 
 And that's it, all your dotfiles should be configured and ready to go.
 
-# Bash Setup
+## Bash Setup
 
 Install **Oh My Bash** from the site https://ohmybash.nntoan.com. The theme I mainly use is `simple`.

@@ -1,3 +1,4 @@
+-- Set leader
 local leader = " "
 vim.g.mapleader = leader
 
