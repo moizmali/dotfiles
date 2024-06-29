@@ -20,3 +20,4 @@ keymap.set("n", "<leader>>", "<C-w>>")
 -- Move highlited text up and down
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
