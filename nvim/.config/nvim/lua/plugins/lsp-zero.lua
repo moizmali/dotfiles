@@ -17,13 +17,13 @@ return {
             lsp_zero.default_keymaps({buffer = bufnr})
         end)
 
---         local cmp = require('cmp')
--- 
---         cmp.setup({
---             mapping = cmp.mapping.preset.insert({
---                 ['<CR>'] = cmp.mapping.confirm({select = false}),
---             }),
---         })
+        local cmp = require('cmp')
+
+        cmp.setup({
+            mapping = cmp.mapping.preset.insert({
+                ['<CR>'] = cmp.mapping.confirm({select = false}),
+            }),
+        })
 
         -- Dart language server comes built-in with the language.
         -- Therefore it is not managed by Mason and works out of
