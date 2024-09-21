@@ -4,6 +4,10 @@ vim.g.mapleader = leader
 
 local keymap = vim.keymap
 
+-- Center cursor when going down/up
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+
 -- Write and quit the current buffer
 keymap.set("n", "<leader>w", ":wa<CR>")
 keymap.set("n", "<leader>q", ":q<CR>")
