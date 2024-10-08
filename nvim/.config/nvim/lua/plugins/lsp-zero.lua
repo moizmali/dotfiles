@@ -33,7 +33,7 @@ return {
         -- Language server installation managed by Mason.
         require('mason').setup({})
         require('mason-lspconfig').setup({
-            ensure_installed = {'gopls', 'lua_ls', 'html', 'tsserver'},
+            ensure_installed = {'gopls', 'lua_ls', 'html', 'ts_ls'},
             handlers = {
                 function(server_name)
                     require('lspconfig')[server_name].setup({})
