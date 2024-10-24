@@ -16,6 +16,7 @@ return {
                 "yaml",
                 "json",
                 "dart",
+                "bash",
             },
             sync_install = false,
             highlight = { enable = true },

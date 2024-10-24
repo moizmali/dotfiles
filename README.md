@@ -6,7 +6,7 @@
 - Tmux
 - NeoVim
 - RipGrep
-- Stow
+- GNU Stow
 
 ## Setup
 
