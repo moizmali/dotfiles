@@ -28,6 +28,10 @@ cd dotfiles
 stow nvim --target ~/
 ```
 
+4. Setup the nerd font in your terminal of choice. I use the default GNOME terminal and the nerd for `Hack`. The nerd font can be downloaded from https://www.nerdfonts.com.
+
+Download the nerd font of choice and extract it to the `/usr/share/fonts` folder to make it available system wide. Then you should be able to add this font to your terminal using the terminal settings.
+
 And that's it, all your dotfiles should be configured and ready to go.
 
 ## Bash Setup
