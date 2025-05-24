@@ -22,6 +22,14 @@ git clone git@github.com:moizmali/dotfiles.git
 cd dotfiles
 ```
 
+Optional step: If this is a fresh install, and Neovim, GNU Stow or any other dependencies are still not installed, then you can run the `setup.sh` file with the following command:
+
+```
+sudo ./setup.sh
+```
+
+Note: The above command will not only install Neovim, but also all the Flathub applications that I use on a day-to-day basis.
+
 3. Run the following `make` command to create a symbolic link to the NeoVim and Tmux configuration files in the Git repository to your system `~/.config` folder.
 
 ```
