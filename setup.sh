@@ -57,6 +57,8 @@ flatpak install flathub io.missioncenter.MissionCenter -y
 flatpak install flathub org.onlyoffice.desktopeditors -y
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.spotify.Client -y
+flatpak install flathub io.dbeaver.DBeaverCommunity -y
+flatpak install flathub org.gnome.Papers -y
 echo "Flathub applications installed!"
 
 echo "Install script completed!"

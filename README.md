@@ -47,5 +47,17 @@ Download the nerd font of choice and extract it to the `/usr/share/fonts` folder
 3. Install the `catpuccin` theme for Tmux by following the instructions mentioned here: https://github.com/catppuccin/tmux
 
 4. Install the `catpuccin` theme for GNOME Terminal by following the instructions mentioned here: https://github.com/catppuccin/gnome-terminal
+Note: GNOME terminal now comes with the `catpuccin` theme built-in. You should be able to change the colour scheme from the preferences section itself without downloading any third-party colour schemes.
 
 And that's it, all your dotfiles should be configured and ready to go.
+
+## Post Installation
+
+Install the following needed for development:
+
+1. Go
+2. Flutter
+3. Android command line tools & SDK
+4. Docker
+5. Nodejs
+6. AWS CLI
