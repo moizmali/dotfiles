@@ -59,6 +59,7 @@ flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.spotify.Client -y
 flatpak install flathub io.dbeaver.DBeaverCommunity -y
 flatpak install flathub org.gnome.Papers -y
+flatpak install flathub net.ankiweb.Anki -y
 echo "Flathub applications installed!"
 
 echo "Install script completed!"
