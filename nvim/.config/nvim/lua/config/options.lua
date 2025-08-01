@@ -23,3 +23,5 @@ opt.clipboard:append("unnamedplus")
 -- Add ruler
 opt.colorcolumn = "120"
 
+-- Add rounded borders
+opt.winborder = 'rounded'
