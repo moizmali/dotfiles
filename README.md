@@ -7,6 +7,7 @@
 - NeoVim
 - RipGrep
 - GNU Stow
+- [D2](https://d2lang.com)
 
 ## Setup
 
