@@ -6,6 +6,7 @@
 - Tmux
 - NeoVim
 - RipGrep
+- [fzf](https://junegunn.github.io/fzf)
 - GNU Stow
 - [D2](https://d2lang.com)
 
