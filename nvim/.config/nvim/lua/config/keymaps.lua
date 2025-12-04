@@ -27,3 +27,7 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selected text up" })
 
 -- Generate D2 diagrams
 keymap.set("n", "<leader>d2", ":!d2 %<CR>", { desc = "Run d2 on current buffer" })
+
+-- Run jq on highlighted text
+keymap.set("v", "<leader>jq", ":!jq .<CR>", { desc = "Run jq on selected text" })
+keymap.set("v", "<leader>jq", ":!jq -c .<CR>", { desc = "Run 'jq -c' on selected text" })
