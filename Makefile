@@ -1,5 +1,8 @@
 .PHONY: setup
 setup:
-	stow tmux --target ~/
-	stow nvim --target ~/
-	stow crush --target ~/
+	stow config --dotfiles --target ~/
+
+.PHONY: remove
+remove:
+	stow config --dotfiles --target ~/ -D
+
