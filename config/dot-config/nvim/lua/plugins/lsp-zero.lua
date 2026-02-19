@@ -1,6 +1,8 @@
+-- This project is now dead. Neovim has built-in LSP configuration support now.
+-- This plugin must be removed in the future and replaced with native LSP configuration.
 return {
     "VonHeikemen/lsp-zero.nvim",
-    branch = "v3.x",
+    branch = "v4.x",
     dependencies = {
         'williamboman/mason.nvim',
         'williamboman/mason-lspconfig.nvim',
