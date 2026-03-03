@@ -7,7 +7,7 @@
         "go"
       ]
     },
-    "dart": {
+    "dart_lsp": {
       "command": "dart",
       "args": [
         "language-server"
@@ -28,7 +28,7 @@
     }
   },
   "mcp": {
-    "dart": {
+    "dart_mcp": {
       "type": "stdio",
       "command": "dart",
       "args": [
