@@ -2,25 +2,39 @@ return {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
     config = function ()
-        local configs = require("nvim-treesitter.configs")
+        require('nvim-treesitter').install {
+            -- Go
+            'go', 'gomod', 'gosum',
+            -- Dart & Flutter
+            'dart',
+            -- Web
+            'html', 'css', 'javascript', 'typescript',
+            -- JSON & YAML
+            'json', 'yaml',
+            -- Bash
+            'bash',
+            -- Lua
+            'lua',
+        }
 
-        configs.setup({
-            ensure_installed = {
-                "lua",
-                "vim",
-                "vimdoc",
-                "javascript",
-                "html",
-                "typescript",
-                "go",
-                "yaml",
-                "json",
-                "dart",
-                "bash",
+        vim.api.nvim_create_autocmd('FileType', {
+            pattern = {
+                -- Go
+                'go', 'mod', 'sum',
+                -- Dart & Flutter
+                'dart',
+                -- Web
+                'html', 'css', 'js', 'jsx', 'ts', 'tsx',
+                -- JSON & YAML
+                'json', 'yaml', 'yml',
+                -- Bash
+                'sh',
+                -- Lua
+                'lua',
             },
-            sync_install = false,
-            highlight = { enable = true },
-            indent = { enable = true },
+            callback = function()
+                vim.treesitter.start()
+            end,
         })
     end
 }
