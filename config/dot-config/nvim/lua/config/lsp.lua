@@ -1,33 +1,14 @@
 local lsp = vim.lsp
 
--- Lua
-lsp.config('luals', {
-  cmd = {'lua-language-server'},
-  filetypes = {'lua'},
-  root_markers = {},
-})
-lsp.enable('luals')
+-- NOTE: You need to have the language servers installed on your system for this to work.
+-- You can use Mason to install them.
 
 -- Go
-lsp.config('go', {
-    cmd = {'gopls'},
-    filetypes = {'go'},
-    root_markers = {'go.mod', 'go.sum'},
-})
-lsp.enable('go');
+lsp.enable('gopls');
 
 -- Dart & Flutter
-lsp.config('dart', {
-    cmd = {'dart', 'language-server'},
-    filetypes = {'dart'},
-    root_markers = {'pubspec.yaml', 'pubspec.lock'},
-})
-lsp.enable('dart');
+lsp.enable('dartls');
 
 -- Typescript & Javascript
-lsp.config('typescript', {
-    cmd = {'typescript-language-server', '--stdio'},
-    filetypes = {'ts', 'tsx', 'js', 'jsx'},
-    root_markers = {'package.json', 'package.lock'},
-})
-lsp.enable('typescript');
+lsp.enable('ts_ls');
+

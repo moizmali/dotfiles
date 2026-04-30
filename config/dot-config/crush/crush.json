@@ -22,8 +22,10 @@
         "--stdio"
       ],
       "filetypes": [
+        "js",
+        "jsx",
         "ts",
-        "js"
+        "tsx"
       ]
     }
   },
