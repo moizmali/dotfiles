@@ -1,12 +1,12 @@
-lsp = vim.lsp
+local lsp = vim.lsp
 
--- lsp.config('luals', {
---   cmd = {'lua-language-server'},
---   filetypes = {'lua'},
---   root_markers = {'.luarc.json', '.luarc.jsonc'},
--- })
---
--- lsp.enable('luals')
+-- Lua
+lsp.config('luals', {
+  cmd = {'lua-language-server'},
+  filetypes = {'lua'},
+  root_markers = {},
+})
+lsp.enable('luals')
 
 -- Go
 lsp.config('go', {
