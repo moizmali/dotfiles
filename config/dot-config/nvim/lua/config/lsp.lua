@@ -11,4 +11,3 @@ lsp.enable('dartls');
 
 -- Typescript & Javascript
 lsp.enable('ts_ls');
-
