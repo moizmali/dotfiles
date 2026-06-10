@@ -2,7 +2,7 @@ return {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
     config = function ()
-        require('nvim-treesitter').install {
+        require('nvim-treesitter').setup({
             -- Go
             'go', 'gomod', 'gosum',
             -- Dart & Flutter
@@ -15,7 +15,7 @@ return {
             'bash',
             -- Lua
             'lua',
-        }
+        })
 
         vim.api.nvim_create_autocmd('FileType', {
             pattern = {

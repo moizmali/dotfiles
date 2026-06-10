@@ -1,20 +1,5 @@
 #! /bin/bash
 
-read -p "Is RPM Fusion installed and setup? (y/n): " response
-
-case $response in
-[yY])
-	;;
-[nN])
-	echo "Please install RPM Fusion first as it is a requirement for this setup"
-	exit 1
-	;;
-*)
-	echo "Invalid input, exiting setup script"
-	exit 1
-	;;
-esac
-
 read -p "Is the Flathub remote setup? (y/n): " flResponse
 
 case $flResponse in
@@ -33,23 +18,23 @@ esac
 echo "Install script started!"
 
 echo "Running updates..."
-dnf update -y
+apt update -y
 echo "Updates completed!"
 
-echo "Installing Neovim..."
-dnf install -y neovim python3-neovim
-echo "Neovim installed!"
+echo "Installing Git..."
+apt install git -y
+echo "Git installed!"
 
 echo "Installing Ripgrep..."
-dnf install ripgrep -y
+apt install ripgrep -y
 echo "Ripgrep installed!"
 
 echo "Installing GNU Stow..."
-dnf install stow -y
+apt install stow -y
 echo "GNU Stow installed!"
 
 echo "Installing FZF..."
-dnf install fzf -y
+apt install fzf -y
 echo "FZF installed!"
 
 # Install the Flathub Apps
