@@ -26,6 +26,9 @@ alias ts="sh ~/Code/dotfiles/scripts/tsesh.sh"
 # Android Command Line Tools
 export PATH=$PATH:$HOME/Android/Sdk/cmdline-tools/latest/bin
 
+# Mason Binary Path
+export PATH=$PATH:$HOME/.local/share/nvim/mason/bin
+
 # Update crush
 alias crush-update="go install github.com/charmbracelet/crush@latest"
 
