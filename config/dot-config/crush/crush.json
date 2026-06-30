@@ -30,6 +30,13 @@
     }
   },
   "mcp": {
+    "go_mcp": {
+      "type": "stdio",
+      "command": "gopls",
+      "args": [
+        "mcp"
+      ]
+    },
     "dart_mcp": {
       "type": "stdio",
       "command": "dart",
