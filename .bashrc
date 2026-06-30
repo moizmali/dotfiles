@@ -20,8 +20,9 @@ aws-profile() {
     echo "AWS Profile set to '$AWS_PROFILE'"
 }
 
-# Aliast TSesh Script
+# Aliast TSesh & NSesh Scripts
 alias ts="sh ~/Code/dotfiles/scripts/tsesh.sh"
+alias ns="sh ~/Code/dotfiles/scripts/nsesh.sh"
 
 # Android Command Line Tools
 export PATH=$PATH:$HOME/Android/Sdk/cmdline-tools/latest/bin
