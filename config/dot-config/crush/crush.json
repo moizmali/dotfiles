@@ -1,7 +1,7 @@
 {
   "$schema": "https://charm.land/crush.json",
   "lsp": {
-    "go": {
+    "go_lsp": {
       "command": "gopls",
       "filetypes": [
         "go"
@@ -16,7 +16,7 @@
         "dart"
       ]
     },
-    "typescript": {
+    "typescript_lsp": {
       "command": "typescript-language-server",
       "args": [
         "--stdio"
