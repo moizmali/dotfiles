@@ -24,8 +24,12 @@ aws-profile() {
 alias ts="sh ~/Code/dotfiles/scripts/tsesh.sh"
 alias ns="sh ~/Code/dotfiles/scripts/nsesh.sh"
 
+# Android Home
+export ANDROID_HOME="$HOME/Android"
+
 # Android Command Line Tools
-export PATH=$PATH:$HOME/Android/Sdk/cmdline-tools/latest/bin
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+export PATH=$PATH:$ANDROID_HOME/emulator
 
 # Mason Binary Path
 export PATH=$PATH:$HOME/.local/share/nvim/mason/bin
