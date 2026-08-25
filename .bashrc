@@ -43,4 +43,7 @@ alias aws-login="aws sso login --sso-session=home24"
 # Sentinel One Scan Check
 alias sone-status="sudo sentinelctl scan status"
 
+# Add Local binaries to path for Claude CLI
+export PATH="$HOME/.local/bin:$PATH"
+
 # ---------- Custom Configurations ----------
