@@ -7,16 +7,24 @@ input=$(cat)
 
 usage_bar() {
   # Renders a fixed-width block-character progress bar for a 0-100 percentage.
+  # The filled portion is colored green -> yellow -> red as it fills up
+  # (dimmed to match the rest of the status line), then reset back to plain
+  # dim so surrounding text is unaffected.
   local pct="$1" width=10
   awk -v p="$pct" -v w="$width" 'BEGIN {
     f = (p * w / 100) + 0.5
     if (f > w) f = w
     if (f < 0) f = 0
     filled = int(f)
+
+    if (p < 50) color = "\033[2;32m"      # green
+    else if (p < 80) color = "\033[2;33m" # yellow
+    else color = "\033[2;31m"             # red
+
     bar = ""
     for (i = 0; i < filled; i++) bar = bar "▓"
     for (i = filled; i < w; i++) bar = bar "░"
-    printf "%s", bar
+    printf "%s%s\033[2;39m", color, bar
   }'
 }
 
