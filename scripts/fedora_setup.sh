@@ -30,6 +30,21 @@ case $flResponse in
 	;;
 esac
 
+read -p "Are all the software packages up to date? (y/n): " updateResponse
+
+case $updateResponse in
+[yY])
+	;;
+[nN])
+	echo "Please make sure all updates are downloaded and setup from the GNOME Software Center"
+	exit 1
+	;;
+*)
+	echo "Invalid input, exiting setup script"
+	exit 1
+	;;
+esac
+
 echo "Install script started!"
 
 echo "Running updates..."
