@@ -16,5 +16,7 @@
       "effortLevel": "xhigh"
     }
   },
-  "theme": "dark"
+  "theme": "dark",
+  "autoCompactEnabled": false,
+  "idleCompaction": false
 }
