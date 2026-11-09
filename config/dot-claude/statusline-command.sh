@@ -74,4 +74,15 @@ if [ -n "$usage_info" ]; then
   fi
 fi
 
+# AWS profile selected in this terminal session (only shown when set).
+if [ -n "$AWS_PROFILE" ]; then
+  # Profile name in (dimmed) red, then back to plain dim like the usage bars.
+  aws_info="aws "$'\033[2;31m'"${AWS_PROFILE}"$'\033[2;39m'
+  if [ -n "$line" ]; then
+    line="${line} │ ${aws_info}"
+  else
+    line="$aws_info"
+  fi
+fi
+
 printf "\033[2m%s\033[0m" "$line"
